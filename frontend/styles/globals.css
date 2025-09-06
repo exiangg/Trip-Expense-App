@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enable tabular numbers on numeric cells */
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* Simple dialog backdrop */
+.backdrop {
+  @apply fixed inset-0 bg-black/40 flex items-center justify-center z-50;
+}
+.card {
+  @apply bg-white shadow-md rounded-2xl;
+}
+
+@layer base {
+  body { @apply font-sans bg-gradient-to-br from-slate-50 to-blue-50; }
+}
